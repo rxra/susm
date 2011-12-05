@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Another simple user stories manager</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/user.css" />
+</head>
+<body>
+    <div id="user_title">{{ username }} (<a href="{{url_logout}}">logout</a>)</div>
+    <div id="backlog" class="us_list" style="width: 400px;">
+        <div class="us_list_title">Backlog</div>
+        <div class="us_list_area">
+            <div class="us_list_area_item">c'est l'histoire d'un mec qui veut faire un service web</div>
+            <div class="us_list_area_item">c'est l'histoire d'un mec qui n'est pas graphiste</div>
+            <div class="us_list_area_item">donc faire un site web c'est pas facile car c'est moche</div>
+        </div>
+        <form class="us_list_add">
+            <textarea placeholder="" class="us_list_new"></textarea>
+            <input type="submit" value="Add" class="us_list_submit add">
+            <input type="submit" value="Cancel" class="us_list_submit cancel">
+        </form>
+    </div>
+</html>
